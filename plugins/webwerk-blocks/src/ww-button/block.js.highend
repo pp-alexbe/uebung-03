@@ -1,0 +1,82 @@
+/**
+ * BLOCK: cgb
+ *
+ * Registering a basic block with Gutenberg.
+ * Simple block, renders and saves the same content without any interactivity.
+ */
+
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
+
+import PostSelector from '@vermilion/post-selector';
+
+const { registerBlockType } = wp.blocks;
+const { Fragment, RawHTML } = wp.element;
+const { InspectorControls } = wp.editor;
+const { PanelBody } = wp.components;
+
+registerBlockType( 'ww/button', {
+	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
+	title: 'WW - Button', // Block title.
+	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
+	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	keywords: [
+		'WW - Button',
+		'Webwerk',
+	],
+  attributes: {
+    posts: {
+      type: 'array',
+      default: []
+    },
+  },
+
+  edit({ attributes, setAttributes }) {
+    return (
+      <Fragment>
+        <InspectorControls>
+          <PanelBody title="Post Selector">
+
+            <PostSelector
+              onPostSelect={post => {
+                attributes.posts.push(post);
+                setAttributes({ posts: [...attributes.posts] });
+              }}
+              posts={attributes.posts}
+              onChange={newValue => {
+                setAttributes({ posts: [...newValue] });
+              }}
+              postType={'page'}
+            />
+
+          </PanelBody>
+        </InspectorControls>
+        <div>
+          {attributes.posts.map(post => (
+            <div>
+              #{post.id}
+              <a href={post.link}><h2>{post.title}</h2></a>
+              <RawHTML>{post.excerpt}</RawHTML>
+            </div>
+
+          ))}
+        </div>
+      </Fragment>
+    );
+  },
+
+  save({ attributes }) {
+    return(
+      <div>
+        {attributes.posts.map(post => (
+          <div>
+            #{post.id}
+            <h2>{post.title}</h2>
+            <RawHTML>{post.excerpt}</RawHTML>
+          </div>
+        ))}
+      </div>
+    )
+  }
+});

@@ -1,0 +1,40 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-ww-button__link {
+  font-size: 1.16667rem;
+  position: relative;
+  border: 1px solid $dark-blue;
+  padding: $grid-column-gutter / 2;
+  background: $white;
+  display: inline-block;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+
+    .symbol {
+      top: 5%;
+      transform: rotate(-45deg);
+      transition: all 0.25s;
+    }
+  }
+
+  span {
+    display: block;
+    padding-left: $grid-column-gutter * 2.5;
+  }
+
+  .symbol {
+    width: 2.77778rem;
+    height: 2.77778rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $dark-blue;
+  }
+}
