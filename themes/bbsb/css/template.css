@@ -1225,6 +1225,85 @@ select {
 .clearfix::after {
   clear: both; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+body {
+  background-image: url("../img/Hintergrundbild_Createschools.jpg");
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0; }
+
+a {
+  text-decoration: underline; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.outer {
+  overflow: hidden;
+  width: 100%; }
+
+.page-wrap {
+  max-width: 80rem;
+  margin: 0 auto;
+  background: #fff; }
+
+header {
+  margin: 0 auto;
+  position: relative;
+  max-width: 80rem; }
+  header .logo {
+    display: block;
+    position: absolute;
+    left: 0;
+    max-width: 12.75rem;
+    width: 28%;
+    margin: 3%; }
+    header .logo img {
+      width: 100%;
+      height: auto; }
+      header .logo img .hero {
+        position: absolute; }
+
+.navbar {
+  margin: 0 auto;
+  max-width: 80rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative; }
+
+.menu-btn {
+  padding: 0.5em;
+  background: #39686a;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s; }
+  @media screen and (min-width: 64rem) {
+    .menu-btn {
+      display: none; } }
+  .menu-btn span {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+
+#main-menu {
+  margin: 0;
+  list-style: none; }
+  @media screen and (min-width: 64em) {
+    #main-menu {
+      display: block !important;
+      margin: -1.25rem 0 0; }
+      #main-menu li {
+        float: left;
+        width: 8.25rem;
+        text-align: center; } }
+
+#main-menu a {
+  border-width: 1.25rem 0 0;
+  border-style: solid;
+  display: block; }
+
+#main-menu a,
+#lang-menu a {
+  text-decoration: none;
+  padding: .5rem; }

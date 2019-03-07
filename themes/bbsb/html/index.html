@@ -6,25 +6,36 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Schools München</title>
-  <link rel="stylesheet" href="/scss/template.scss">
+
+  <link rel="stylesheet" href="/css/template.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 
 <body>
   <div class="outer">
-    <header class="header page wrap">
+    <header class="header page-wrap">
       <div class="logo">
         <a href="#">
-          <img src="" alt="">
+          <img src="/img/Create_Schools_Logo.png" alt="">
         </a>
       </div>
       <div class="hero">
         <picture>
-
+          <source media="(min-width: 1201px)" src="/img/IMG_4151-1440x600.jpg">
+          <source media="(min-width: 1025px)" src="/img/IMG_4151-1200x500.jpg">
+          <source media="(min-width: 769px)" src="/img/IMG_4151-1024x427.jpg">
+          <source media="(min-width: 641px)" src="/img/IMG_4151-768x320.jpg">
+          <source media="(min-width: 376px)" src="/img/IMG_4151-640x267.jpg">
+          <source media="(min-width: 0px)" src="/img/IMG_4151-375x157.jpg">
+          <img src="/img/IMG_4151-640x267.jpg" alt="">
         </picture>
       </div>
       <div class="navbar">
         <nav class="main-nav">
-          <button class="btn" type="button" name="button"></button>
+          <button class="menu-btn" type="button" data-for="main-menu">
+            <img src="/img/bars.svg" alt="">
+            <span>Menu</span>
+          </button>
           <ul id="main-menu">
             <li class="orange">
               <a href="#">Philosophie</a>
@@ -58,7 +69,7 @@
         </nav>
       </div>
     </header>
-    <main class="main page wrap">
+    <main class="main page-wrap">
       <a class="fb" href="#"></a>
       <div class="section title-items">
         <article class="t-item orange">
