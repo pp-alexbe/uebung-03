@@ -42,13 +42,17 @@
 //  37. Top Bar
 @import 'util/util';
 
+//Fließtext
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+
 // 1. Global
 // ---------
 
 $global-font-size: 112.5%;
 $global-width: rem-calc(1440);
-$global-lineheight: 1.5;
-$foundation-palette: ( primary: #1779ba, secondary: #767676, success: #3adb76, warning: #ffae00, alert: #cc4b37, );
+$global-lineheight: 1.8;
+$foundation-palette: ( primary: #2199e8, secondary: #777, success: #3adb76, warning: #ffae00, alert: #ec5840, );
 $black: #000000;
 $white: #ffffff;
 $light-gray: #eeeeee;

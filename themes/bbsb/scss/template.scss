@@ -1,12 +1,17 @@
 @charset 'utf-8';
 @import 'settings';
-@import 'mixins';
 @import 'foundation';
+@import 'motion-ui';
 @include foundation-global-styles;
+@include foundation-grid;
 @include foundation-typography;
-@include foundation-forms;
+@include foundation-breadcrumbs;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
+
+.clearfix {
+  @include clearfix;
+}
 
 body {
   background-image: url("../img/Hintergrundbild_Createschools.jpg");
@@ -14,10 +19,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
-}
-
-a {
-  text-decoration: underline;
 }
 
 img {
@@ -28,15 +29,25 @@ img {
 .outer {
   overflow: hidden;
   width: 100%;
+  margin: 0 auto;
 }
 
 .page-wrap {
-  max-width: rem-calc(1440);
+  max-width: $global-width;
   margin: 0 auto;
   background: #fff;
 }
 
-header {
+.section {
+  max-width: rem-calc(1280);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.header {
   margin: 0 auto;
   position: relative;
   max-width: 80rem;
@@ -60,7 +71,7 @@ header {
   }
 }
 
-.navbar {
+.nav-bar {
   margin: 0 auto;
   max-width: 80rem;
   font-size: 1rem;
@@ -90,22 +101,55 @@ header {
   @media screen and (min-width: 64em) {
     display: block !important;
     margin: -1.25rem 0 0;
+
     li {
       float: left;
       width: 8.25rem;
       text-align: center;
+
+      a {
+        border-width: 1.25rem 0 0;
+        border-style: solid;
+      }
     }
   }
 }
 
+#lang-menu a,
 #main-menu a {
-  border-width: 1.25rem 0 0;
-  border-style: solid;
-  display: block;
+  @media screen and (min-width: 64em) {
+    padding: 0.5rem;
+  }
 }
 
-#main-menu a,
-#lang-menu a {
+#main-menu a {
+  color: #39686a;
+  display: block;
+  line-height: 1;
   text-decoration: none;
-  padding: .5rem;
+  transition: background .25s;
+}
+
+.orange a {
+  border-color: #f29400;
+}
+
+.orange a:hover {
+  background: #ffedd0;
+}
+
+.rose a {
+  border-color: #986566;
+}
+
+.rose a:hover {
+  background: #e3d5d5;
+}
+
+.blue a {
+  border-color: #204773;
+}
+
+.blue a:hover {
+  background: #d2e1f3;
 }
