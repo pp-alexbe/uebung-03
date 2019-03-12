@@ -22,7 +22,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: inline-block;
 }
@@ -30,9 +30,7 @@ img {
 .outer {
   overflow: hidden;
   width: 100%;
-  background: #fff;
   margin: 0 auto;
-  max-width: 80rem;
 }
 
 .page-wrap {
@@ -48,40 +46,120 @@ img {
 a {
   text-decoration: underline;
 }
-
 //header
+
 .header {
-  margin: 0 auto;
-  max-width: 80rem;
   position: relative;
 }
 
 .logo {
   display: block;
   left: 0;
-  max-width: 12rem;
   width: 25%;
-  margin: 2%;
   position: absolute;
+
   a {
     display: block;
   }
 }
 
-.header img {
-  width: 100%;
-  height: auto;
-}
-
 .nav-bar {
-  position: relative;
-  margin: 0 auto;
-  max-width: 80rem;
-  font-size: .8rem
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 .menu-btn {
-  padding: .5rem;
+  padding: 0.4rem;
   background: #39686a;
-  transition: background .25s;
+  transition: background 0.25s;
 }
+
+.menu-btn:hover {
+  background: #213d3e;
+}
+
+#main-menu {
+  margin: 0;
+
+  a {
+    border-width: 0 0 0 3rem;
+    border-style: solid;
+    transition: background 0.25s;
+  }
+}
+
+#lang-menu,
+#main-menu {
+  ul {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: #39686a;
+      display: block;
+      padding: 1rem;
+    }
+  }
+}
+
+#main-menu .orange a {
+  border-color: #f29400;
+}
+
+#main-menu .orange a:hover {
+  background: #ffedd0;
+}
+
+#main-menu .rose a {
+  border-color: #986566;
+}
+
+#main-menu .rose a:hover {
+  background: #e3d5d5;
+}
+
+#main-menu .blue a {
+  border-color: #204773;
+}
+
+#main-menu .blue a:hover {
+  background: #d2e1f3;
+}
+
+#main-menu .beige a {
+  border-color: #9a9966;
+}
+
+#main-menu .beige a:hover {
+  background: #deddcc;
+}
+
+#main-menu .red a {
+  border-color: #981134;
+}
+
+#main-menu .red a:hover {
+  background: #fbdfe7;
+}
+
+#main-menu .turquoise a {
+  border-color: #9ab3af;
+}
+
+#main-menu .turquoise a:hover {
+  background: #dee6e5;
+}
+
+#lang-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  li {
+    float: right;
+  }
+}
+
+#lang-menu a:hover {
+  background:
+}
+//main

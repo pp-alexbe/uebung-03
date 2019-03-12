@@ -1969,10 +1969,90 @@ a {
   position: relative;
   margin: 0 auto;
   max-width: 80rem;
-  font-size: .8rem; }
+  font-size: .9rem;
+  text-transform: uppercase; }
 
 .menu-btn {
-  padding: .5rem;
+  padding: .4rem;
   background: #39686a;
   -webkit-transition: background .25s;
   transition: background .25s; }
+  .menu-btn span {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+
+.menu-btn:hover {
+  background: #213d3e; }
+
+#main-menu {
+  position: relative;
+  margin: 0;
+  line-height: 1.6; }
+  #main-menu li {
+    list-style-type: none; }
+    #main-menu li a {
+      text-decoration: none;
+      line-height: 1;
+      color: #39686a;
+      display: block;
+      padding: 1rem;
+      border-width: 0 0 0 3rem;
+      border-style: solid;
+      -webkit-transition: background .25s;
+      transition: background .25s; }
+
+#main-menu .orange a {
+  border-color: #f29400; }
+
+#main-menu .orange a:hover {
+  background: #ffedd0; }
+
+#main-menu .rose a {
+  border-color: #986566; }
+
+#main-menu .rose a:hover {
+  background: #e3d5d5; }
+
+#main-menu .blue a {
+  border-color: #204773; }
+
+#main-menu .blue a:hover {
+  background: #d2e1f3; }
+
+#main-menu .beige a {
+  border-color: #9a9966; }
+
+#main-menu .beige a:hover {
+  background: #deddcc; }
+
+#main-menu .red a {
+  border-color: #981134; }
+
+#main-menu .red a:hover {
+  background: #fbdfe7; }
+
+#main-menu .turquoise a {
+  border-color: #9ab3af; }
+
+#main-menu .turquoise a:hover {
+  background: #dee6e5; }
+
+#lang-menu {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  #lang-menu li {
+    list-style-type: none;
+    float: right; }
+    #lang-menu li a {
+      text-decoration: none;
+      color: #39686a;
+      display: block;
+      padding: 1rem; }
+
+.main {
+  padding: 0 1rem;
+  margin-top: 2.75rem;
+  position: relative; }
