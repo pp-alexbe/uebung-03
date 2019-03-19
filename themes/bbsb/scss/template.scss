@@ -22,7 +22,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: inline-block;
 }
@@ -30,40 +30,53 @@ img {
 .outer {
   overflow: hidden;
   width: 100%;
+  background: #fff;
   margin: 0 auto;
+  max-width: 80rem;
 }
 
 .page-wrap {
-  max-width: $global-width;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
 .section {
-  max-width: rem-calc(1280);
+  max-width: 71.11111rem;
   margin: 0 auto;
 }
 
 a {
   text-decoration: underline;
 }
-//header
 
 .header {
+  margin: 0 auto;
+  max-width: 80rem;
   position: relative;
 }
 
 .logo {
   display: block;
   left: 0;
+  max-width: 12rem;
   width: 25%;
+  margin: 2%;
   position: absolute;
+}
 
-  a {
-    display: block;
-  }
+.logo a {
+  display: block;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
 }
 
 .nav-bar {
+  position: relative;
+  margin: 0 auto;
+  max-width: 80rem;
   font-size: 0.9rem;
   text-transform: uppercase;
 }
@@ -71,7 +84,15 @@ a {
 .menu-btn {
   padding: 0.4rem;
   background: #39686a;
+  -webkit-transition: background 0.25s;
   transition: background 0.25s;
+}
+
+.menu-btn span {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .menu-btn:hover {
@@ -79,26 +100,24 @@ a {
 }
 
 #main-menu {
+  position: relative;
   margin: 0;
-
-  a {
-    border-width: 0 0 0 3rem;
-    border-style: solid;
-    transition: background 0.25s;
-  }
+  line-height: 1.6;
 }
 
-#lang-menu,
-#main-menu {
-  ul {
-    list-style-type: none;
-    a {
-      text-decoration: none;
-      color: #39686a;
-      display: block;
-      padding: 1rem;
-    }
-  }
+#main-menu li {
+  list-style-type: none;
+}
+
+#main-menu li a {
+  text-decoration: none;
+  line-height: 1;
+  color: #39686a;
+  display: block;
+  padding: 1rem;
+  border-width: 0 0 0 3rem;
+  border-style: solid;
+  transition: background 0.25s;
 }
 
 #main-menu .orange a {
@@ -153,13 +172,38 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+}
 
-  li {
-    float: right;
-  }
+#lang-menu li {
+  list-style-type: none;
+  float: right;
+}
+
+#lang-menu li a {
+  text-decoration: none;
+  color: #39686a;
+  display: block;
+  padding: 1rem;
 }
 
 #lang-menu a:hover {
-  background:
+  background: #e4f0f1;
 }
-//main
+
+.main {
+  padding: 0 1rem;
+  margin-top: 2.75rem;
+  position: relative;
+  display: block;
+}
+
+.facebook {
+  position: absolute;
+  display: block;
+  float: right;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: 1rem;
+  top: -2.75rem;
+  background-size: cover;
+}
