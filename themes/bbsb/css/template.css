@@ -2325,13 +2325,15 @@ a {
   transition: background 0.25s; }
 
 #main-menu .orange a {
-  border-color: #f29400; }
+  border-color: #f29400;
+  background: #fff; }
 
 #main-menu .orange a:hover {
   background: #ffedd0; }
 
 #main-menu .rose a {
-  border-color: #986566; }
+  border-color: #986566;
+  background: #fff; }
 
 #main-menu .rose a:hover {
   background: #e3d5d5; }
@@ -2355,7 +2357,8 @@ a {
   background: #fbdfe7; }
 
 #main-menu .turquoise a {
-  border-color: #9ab3af; }
+  border-color: #9ab3af;
+  background: #fff; }
 
 #main-menu .turquoise a:hover {
   background: #dee6e5; }
@@ -2390,14 +2393,11 @@ a {
   width: 2.5rem;
   height: 2.5rem;
   right: 1rem;
-  top: -2.75rem; }
+  top: -2.5rem; }
 
 .facebook img {
   border: 0;
   border-radius: 40px; }
-
-.facebook img:hover {
-  background-color: #3b5998; }
 
 .section {
   margin-left: -.4rem;
@@ -2405,8 +2405,23 @@ a {
 
 .tile-items {
   margin: 2.75rem 0; }
+  .tile-items .tile-item {
+    display: block;
+    max-width: 27.5rem;
+    margin: 0 auto;
+    background-color: #39686a;
+    border: 0.4rem solid #fefefe;
+    position: relative;
+    padding: 0; }
 
-.tile-item {
-  display: block;
-  max-width: 27.5rem;
-  margin: 0 auto; }
+.tile-item.head-ttl.orange {
+  background: #f29400; }
+
+.tile-item.head-ttl.rose {
+  background: #986566; }
+
+.tile-item.head-ttl.turquoise {
+  background: #9ab3af; }
+
+.t-link {
+  color: #fefefe; }
