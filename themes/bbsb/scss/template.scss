@@ -47,6 +47,11 @@ img {
 
 a {
   text-decoration: underline;
+  color: #39686a;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .header {
@@ -233,18 +238,110 @@ a {
   }
 }
 
-.tile-item.head-ttl.orange {
-    background: #f29400;
+.tile-item.head,
+.tile-item.head-ttl {
+  text-align: center;
 }
 
-.tile-item.head-ttl.rose {
-    background: #986566;
+.tile-item.head-ttl.orange {
+  background: #f29400;
+  text-align: left;
 }
 
 .tile-item.head-ttl.turquoise {
-    background: #9ab3af;
+  background: #9ab3af;
+}
+
+.tile-item.head-ttl.rose {
+  background: #986566;
 }
 
 .t-link {
   color: #fefefe;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  transition: background 0.333s;
+  :hover {
+    background: rgba(255, 255, 255, .2);
+  }
+}
+
+.t-content {
+  color: #fefefe;
+  display: block;
+  padding: 10% 1.38889rem;
+  position: relative;
+}
+
+.t-sub,
+.t-ttl {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.t-ttl {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 2.75rem;
+}
+
+.t-sub {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.quote {
+  text-align: center;
+  border-left: none;
+  padding: 3.5rem 0 0;
+
+  .inner-qoute {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #39686a;
+  }
+
+  a,
+  footer {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #9ab3af;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+.meta-nav {
+  border-bottom: 1.4rem solid;
+  border-color: #39686a;
+}
+
+.meta-menu {
+  margin-bottom: 0;
+  padding-top: 8.8rem;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 1rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
 }
