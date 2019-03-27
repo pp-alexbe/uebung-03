@@ -2234,11 +2234,7 @@ ul.no-bullet, ol.no-bullet {
   clear: both; }
 
 body {
-  background-image: url("../img/Hintergrundbild_Createschools.jpg");
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0; }
+  background-image: url("../img/Hintergrundbild_Createschools.jpg"); }
 
 img {
   max-width: 100%;
@@ -2247,7 +2243,6 @@ img {
 
 .outer {
   overflow: hidden;
-  width: 100%;
   background: #fff;
   margin: 0 auto;
   max-width: 80rem; }
@@ -2257,26 +2252,22 @@ img {
   margin: 0 auto; }
 
 .section {
-  max-width: 71.11111rem;
+  max-width: 70rem;
   margin: 0 auto; }
 
 a {
-  text-decoration: underline;
   color: #39686a; }
 
 p {
   margin-bottom: 0; }
 
 .header {
-  margin: 0 auto;
-  max-width: 80rem;
   position: relative; }
 
 .logo {
   display: block;
   left: 0;
   max-width: 12rem;
-  width: 25%;
   margin: 2%;
   position: absolute; }
 
@@ -2289,9 +2280,7 @@ p {
 
 .nav-bar {
   position: relative;
-  margin: 0 auto;
-  max-width: 80rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: uppercase; }
 
 .menu-btn {
