@@ -2470,7 +2470,8 @@ article {
 
 .tile-item.head,
 .tile-item.head-ttl {
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
 
 .tile-item.head-ttl.orange {
   background: #f29400;
@@ -2501,8 +2502,10 @@ article {
   background: #986566;
   background-image: url("../img/home_4.png");
   background-repeat: no-repeat; }
-  .tile-item.head-ttl.rose .t-ttl {
-    padding-top: 60%; }
+  .tile-item.head-ttl.rose .t-content {
+    padding-bottom: 0.1rem; }
+    .tile-item.head-ttl.rose .t-content .t-ttl {
+      padding-top: 60%; }
 
 .tile-item.head-ttl.standort {
   background-image: url("../img/Start_Standort-486x475.jpg");
@@ -2516,13 +2519,14 @@ article {
   display: block;
   position: relative;
   -webkit-transition: background 0.333s;
-  transition: background 0.333s; }
+  transition: background 0.333s;
+  padding: 10% 1.4rem; }
 
 .t-content {
   color: #fefefe;
   position: relative;
   width: 100%;
-  padding: 10% 1.4rem; }
+  height: 100%; }
 
 .t-sub,
 .t-ttl {

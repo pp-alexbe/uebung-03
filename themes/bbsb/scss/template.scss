@@ -283,6 +283,7 @@ article {
 .tile-item.head,
 .tile-item.head-ttl {
   text-align: center;
+  overflow: hidden;
 }
 
 .tile-item.head-ttl.orange {
@@ -325,8 +326,12 @@ article {
   background-image: url("../img/home_4.png");
   background-repeat: no-repeat;
 
-  .t-ttl {
-    padding-top: 60%;
+  .t-content {
+    padding-bottom: 0.1rem;
+
+    .t-ttl {
+      padding-top: 60%;
+    }
   }
 }
 
@@ -345,13 +350,14 @@ article {
   display: block;
   position: relative;
   transition: background 0.333s;
+  padding: 10% 1.4rem;
 }
 
 .t-content {
   color: #fefefe;
   position: relative;
   width: 100%;
-  padding: 10% 1.4rem;
+  height: 100%;
 }
 
 .t-sub,
