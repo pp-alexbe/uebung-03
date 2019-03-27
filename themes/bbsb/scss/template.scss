@@ -224,6 +224,9 @@ p {
   margin-top: 2.8rem;
   position: relative;
   display: block;
+  @media screen and (max-width: 40em) {
+    font-size: 90%;
+  }
 }
 
 .facebook {
@@ -231,13 +234,13 @@ p {
   display: block;
   width: 2.5rem;
   height: 2.5rem;
-  right: 1rem;
-  top: -2.5rem;
-  @media screen and (min-width: 71.5rem) {
+  right: 9rem;
+  top: 2.5rem;
+  @media screen and (max-width: 71.5rem) {
     width: 2.8rem;
     height: 2.8rem;
-    right: 3.2rem;
-    top: 0.4rem;
+    right: 1rem;
+    top: -2.8rem;
   }
 }
 
@@ -247,8 +250,14 @@ p {
 }
 
 .section {
-  max-width: 55rem;
-  margin: 2.75rem 0;
+  max-width: 55.55556rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tile-items {
@@ -257,27 +266,28 @@ p {
 
   .tile-item {
     display: block;
-    max-width: 27.5rem;
-    margin: 0 auto;
+    max-width: 50%;
+    height: 27rem;
+    flex: 0 0 50%;
     background-color: #39686a;
     border: 0.4rem solid #fefefe;
     position: relative;
     padding: 0;
+    @media screen and (max-width: 48em) {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
   }
 }
 
 .tile-item.head,
 .tile-item.head-ttl {
   text-align: center;
-  padding: 17.5% 1.4rem;
-
 }
 
 .tile-item.head-ttl.orange {
   background: #f29400;
   text-align: left;
-  padding-top: 5%;
-  padding-bottom: 7.5%;
 }
 
 .tile-item.head.schule {
@@ -286,6 +296,7 @@ p {
 
   .t-ttl {
     font-size: 3.8rem;
+    padding-top: 67.5%;
   }
 }
 
@@ -295,6 +306,7 @@ p {
 
   .t-ttl {
     font-size: 3.8rem;
+    padding-top: 67.5%;
   }
 }
 
@@ -302,17 +314,29 @@ p {
   background: #9ab3af;
   background-image: url("../img/home_3.png");
   background-repeat: no-repeat;
+
+  .t-ttl {
+    padding-top: 60%;
+  }
 }
 
 .tile-item.head-ttl.rose {
   background: #986566;
   background-image: url("../img/home_4.png");
   background-repeat: no-repeat;
+
+  .t-ttl {
+    padding-top: 60%;
+  }
 }
 
 .tile-item.head-ttl.standort {
   background-image: url("../img/Start_Standort-486x475.jpg");
   background-repeat: no-repeat;
+
+  .t-ttl {
+    padding-top: 60%;
+  }
 }
 
 .t-link {
@@ -321,14 +345,13 @@ p {
   display: block;
   position: relative;
   transition: background 0.333s;
-  padding-bottom: 50em;
-  margin-bottom: -50em;
 }
 
 .t-content {
   color: #fefefe;
   position: relative;
   width: 100%;
+  padding: 10% 1.4rem;
 }
 
 .t-sub,
@@ -388,7 +411,7 @@ p {
   }
 }
 
-.meta-nav {
+.footer {
   border-bottom: 1.4rem solid;
   border-color: #39686a;
 }
@@ -403,6 +426,11 @@ p {
     padding: 1rem;
     line-height: 1;
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: 40em) {
+  .meta-menu li {
+    display: inline-block;
   }
 }
 
