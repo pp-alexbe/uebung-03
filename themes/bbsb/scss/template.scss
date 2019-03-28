@@ -31,12 +31,12 @@ img {
 }
 
 .page-wrap {
-  max-width: 80rem;
+  max-width: $global-width;
   margin: 0 auto;
 }
 
 .section {
-  max-width: 70rem;
+  max-width: rem-calc(1280);
   margin: 0 auto;
 }
 
@@ -55,9 +55,10 @@ p {
 .logo {
   display: block;
   left: 0;
-  max-width: 12rem;
-  margin: 2%;
+  margin: 2.5%;
   position: absolute;
+  width: 27.5%;
+  max-width: 12.25rem;
 }
 
 .logo a {

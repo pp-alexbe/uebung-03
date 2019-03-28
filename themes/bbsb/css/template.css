@@ -2252,7 +2252,7 @@ img {
   margin: 0 auto; }
 
 .section {
-  max-width: 70rem;
+  max-width: 71.11111rem;
   margin: 0 auto; }
 
 a {
@@ -2267,9 +2267,10 @@ p {
 .logo {
   display: block;
   left: 0;
-  max-width: 12rem;
-  margin: 2%;
-  position: absolute; }
+  margin: 2.5%;
+  position: absolute;
+  width: 27.5%;
+  max-width: 12.25rem; }
 
 .logo a {
   display: block; }
