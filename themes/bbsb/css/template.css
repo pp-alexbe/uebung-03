@@ -2242,7 +2242,6 @@ img {
   display: inline-block; }
 
 .outer {
-  overflow: hidden;
   background: #fff;
   margin: 0 auto;
   max-width: 80rem; }
@@ -2265,8 +2264,6 @@ p {
   position: relative; }
 
 .logo {
-  display: block;
-  left: 0;
   margin: 2.5%;
   position: absolute;
   width: 27.5%;
@@ -2275,13 +2272,8 @@ p {
 .logo a {
   display: block; }
 
-.header img {
-  width: 100%;
-  height: auto; }
-
 .nav-bar {
   position: relative;
-  font-size: 1rem;
   text-transform: uppercase; }
 
 .menu-btn {
@@ -2303,12 +2295,10 @@ p {
   background: #213d3e; }
 
 #main-menu {
-  position: relative;
-  margin: 0;
-  line-height: 1.6; }
+  margin: 0; }
   @media screen and (min-width: 64em) {
     #main-menu {
-      display: block !important;
+      display: block;
       margin: -1.4rem 0 0; } }
 
 #main-menu li {
@@ -2382,7 +2372,6 @@ p {
       padding-top: 1.4rem; } }
 
 #lang-menu li {
-  list-style-type: none;
   float: right; }
 
 #lang-menu li a {
@@ -2399,8 +2388,7 @@ p {
 
 .main {
   margin-top: 2.8rem;
-  position: relative;
-  display: block; }
+  position: relative; }
   @media screen and (max-width: 40em) {
     .main {
       font-size: 90%; } }
@@ -2408,23 +2396,17 @@ p {
 .facebook {
   position: absolute;
   display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-  right: 9rem;
-  top: 2.5rem; }
+  right: 9rem; }
   @media screen and (max-width: 71.5rem) {
     .facebook {
-      width: 2.8rem;
-      height: 2.8rem;
       right: 1rem;
       top: -2.8rem; } }
 
 .facebook img {
-  border: 0;
   border-radius: 40px; }
 
 .section {
-  max-width: 55.55556rem;
+  max-width: 55rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2504,43 +2486,30 @@ article {
     padding-top: 60%; }
 
 .t-link {
-  color: #fefefe;
-  text-decoration: none;
   display: block;
-  position: relative;
   -webkit-transition: background 0.333s;
   transition: background 0.333s;
   padding: 10% 1.4rem; }
 
 .t-content {
-  color: #fefefe;
-  position: relative;
-  width: 100%;
-  height: 100%; }
+  color: #fefefe; }
 
 .t-sub,
 .t-ttl {
-  font-size: 1.6rem;
-  line-height: 2.2rem; }
+  font-size: 1.6rem; }
   @media screen and (min-width: 40em) {
     .t-sub,
     .t-ttl {
-      font-size: 1.2rem;
-      line-height: 2.75rem; } }
+      font-size: 1.2rem; } }
 
 .t-ttl {
   text-transform: uppercase;
-  font-size: 2.2rem;
-  line-height: 2.75rem; }
+  font-size: 2.2rem; }
 
 .t-sub {
-  display: block;
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 0.8rem; }
-  @media screen and (min-width: 40em) {
-    .t-sub {
-      font-size: 1.2rem; } }
 
 .quote {
   text-align: center;
@@ -2554,7 +2523,6 @@ article {
     color: #39686a; }
   .quote a,
   .quote footer {
-    text-decoration: none;
     font-size: 0.8rem;
     color: #9ab3af; }
   .quote a:hover {
@@ -2570,7 +2538,6 @@ article {
   margin-bottom: 0;
   padding-top: 8.8rem; }
   .meta-menu a {
-    text-decoration: none;
     display: block;
     padding: 1rem;
     line-height: 1;
