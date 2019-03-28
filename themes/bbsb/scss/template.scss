@@ -237,7 +237,6 @@ article {
   .tile-item {
     display: block;
     max-width: 50%;
-    height: 27rem;
     flex: 0 0 50%;
     background-color: #39686a;
     border: 0.4rem solid #fefefe;
@@ -254,16 +253,18 @@ article {
 .tile-item.head-ttl {
   text-align: center;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .tile-item.head-ttl.orange {
   background: #f29400;
   text-align: left;
+  padding: 10% 1.4rem;
 }
 
 .tile-item.head.schule {
   background-image: url("../img/Start_Schule-486x475.jpg");
-  background-repeat: no-repeat;
 
   .t-ttl {
     font-size: 3.8rem;
@@ -273,7 +274,6 @@ article {
 
 .tile-item.head.team {
   background-image: url("../img/home_2.jpg");
-  background-repeat: no-repeat;
 
   .t-ttl {
     font-size: 3.8rem;
@@ -282,42 +282,36 @@ article {
 }
 
 .tile-item.head-ttl.turquoise {
-  background: #9ab3af;
   background-image: url("../img/home_3.png");
-  background-repeat: no-repeat;
 
   .t-ttl {
-    padding-top: 60%;
+    padding-top: 52.5%;
   }
 }
 
 .tile-item.head-ttl.rose {
-  background: #986566;
   background-image: url("../img/home_4.png");
-  background-repeat: no-repeat;
 
   .t-content {
     padding-bottom: 0.1rem;
 
     .t-ttl {
-      padding-top: 60%;
+      padding-top: 52.5%;
     }
   }
 }
 
 .tile-item.head-ttl.standort {
   background-image: url("../img/Start_Standort-486x475.jpg");
-  background-repeat: no-repeat;
 
   .t-ttl {
-    padding-top: 60%;
+    padding-top: 52.5%;
   }
 }
 
 .t-link {
   display: block;
   transition: background 0.333s;
-  padding: 10% 1.4rem;
 }
 
 .t-content {
