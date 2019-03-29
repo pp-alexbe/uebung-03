@@ -253,14 +253,17 @@ article {
 .tile-item.head-ttl {
   text-align: center;
   overflow: hidden;
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: contain;
 }
 
 .tile-item.head-ttl.orange {
   background: #f29400;
   text-align: left;
-  padding: 10% 1.4rem;
+
+  .t-content {
+    padding: 7.5% 1.4rem;
+  }
 }
 
 .tile-item.head.schule {
@@ -285,7 +288,7 @@ article {
   background-image: url("../img/home_3.png");
 
   .t-ttl {
-    padding-top: 52.5%;
+    padding-top: 50%;
   }
 }
 
@@ -296,7 +299,7 @@ article {
     padding-bottom: 0.1rem;
 
     .t-ttl {
-      padding-top: 52.5%;
+      padding-top: 50%;
     }
   }
 }
@@ -305,7 +308,7 @@ article {
   background-image: url("../img/Start_Standort-486x475.jpg");
 
   .t-ttl {
-    padding-top: 52.5%;
+    padding-top: 58%;
   }
 }
 
