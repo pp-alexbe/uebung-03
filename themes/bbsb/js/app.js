@@ -67,7 +67,7 @@ $('#main-menu li.has-sub > a').on('click', function() {
     $(this).children('.s-icon').replaceWith('<i class="s-icon"><svg role="img" class="symbol" aria-hidden="true" focusable="false"><use xlink:href="' + template_path + '/img/icons.svg#arrow-up"></use></svg></i>');
     element.children('div').slideDown();
     element.children('ul').slideDown();
-    
+
     //element.siblings('li').children('li').find('ul').slideUp();
     element.siblings('li').removeClass('open');
     element.siblings('li').find('li').removeClass('open');
