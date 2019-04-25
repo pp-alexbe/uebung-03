@@ -9,6 +9,12 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .clearfix {
   @include clearfix;
 }

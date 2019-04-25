@@ -2226,6 +2226,12 @@ ul.no-bullet, ol.no-bullet {
 .clearfix::after {
   clear: both; }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .clearfix::before, .clearfix::after {
   display: table;
   content: ' '; }
