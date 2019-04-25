@@ -24,7 +24,7 @@ img {
 }
 
 .outer {
-  background: #fff;
+  background: $white;
   margin: 0 auto;
   max-width: 80rem;
 }
@@ -121,11 +121,11 @@ p {
 }
 
 #main-menu .orange a {
-  border-color: #f29400;
+  border-color: $orange;
 }
 
 #main-menu .orange a:hover {
-  background: #ffedd0;
+  background: $light-orange;
 }
 
 #main-menu .rose a {
@@ -239,7 +239,7 @@ article {
     max-width: 50%;
     flex: 0 0 50%;
     background-color: #39686a;
-    border: 0.4rem solid #fefefe;
+    border: 0.4rem solid $white;
     position: relative;
     padding: 0;
     @media screen and (max-width: 48em) {
@@ -318,7 +318,7 @@ article {
 }
 
 .t-content {
-  color: #fefefe;
+  color: $white;
 }
 
 .t-sub,
